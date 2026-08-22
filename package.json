@@ -1,7 +1,7 @@
 {
-  "name": "@bergeouss/n8n-nodes-opencode-zen",
-  "version": "0.2.0",
-  "description": "OpenCode Zen chat model sub-node: multi-provider LLM gateway as a drop-in model for n8n AI Agents",
+  "name": "@bergeouss/n8n-nodes-opencode",
+  "version": "0.2.1",
+  "description": "OpenCode chat model sub-nodes for n8n: Zen (full catalogue) and Go (curated coding selection) gateways as drop-in LLMs for AI Agents",
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
