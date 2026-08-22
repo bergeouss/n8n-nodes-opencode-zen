@@ -15,4 +15,6 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./credentials/OpenCodeZenApi.credentials"), exports);
+__exportStar(require("./credentials/OpenCodeGoApi.credentials"), exports);
 __exportStar(require("./nodes/LmChatOpenCodeZen/LmChatOpenCodeZen.node"), exports);
+__exportStar(require("./nodes/LmChatOpenCodeGo/LmChatOpenCodeGo.node"), exports);

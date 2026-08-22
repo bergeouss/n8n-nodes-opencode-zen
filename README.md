@@ -1,8 +1,13 @@
 # n8n-nodes-opencode-zen
 
-Community node for [n8n](https://n8n.io): **OpenCode Zen Chat Model**, a chat model sub-node that plugs any [OpenCode Zen](https://opencode.ai/docs/zen) model straight into your AI Agents and chains.
+Community node for [n8n](https://n8n.io): two chat model sub-nodes that plug [OpenCode](https://opencode.ai) gateways straight into your AI Agents and chains:
 
-One node, one gateway, every model family:
+| Node | Gateway | Catalogue |
+|---|---|---|
+| **OpenCode Zen Chat Model** | `https://opencode.ai/zen/v1` | Full list (~64 models): GPT, Claude, Gemini, DeepSeek, GLM, Kimi, MiniMax, free tier |
+| **OpenCode Go Chat Model** | `https://opencode.ai/zen/go/v1` | Curated coding-focused selection (~29 models), includes the free `ox-alpha-free` |
+
+One credential (same API key works for both gateways), every model family:
 
 | Model family | Examples |
 |---|---|
@@ -10,7 +15,9 @@ One node, one gateway, every model family:
 | Claude / Qwen | `claude-sonnet-4-6`, `claude-haiku-4-5`, `qwen3.7-plus` |
 | Gemini | `gemini-3-flash`, `gemini-3.1-pro` |
 | DeepSeek / GLM / Kimi / MiniMax | `deepseek-v4-pro`, `glm-5.2`, `kimi-k2.6`, `minimax-m3` |
-| Free tier | `x-preview-f-free`, `deepseek-v4-flash-free`, `hy3-free`, ... |
+| Free tier | `x-preview-f-free` (Zen), `ox-alpha-free` (Go) |
+
+> Note: some models (e.g. reasoning models like `ox-alpha-free`) spend tokens on hidden chain-of-thought before answering — give them a reasonable Max Token budget or the visible answer can come back empty.
 
 ## Features
 
