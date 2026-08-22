@@ -1,0 +1,25 @@
+{
+  "name": "@bergeouss/n8n-nodes-opencode-zen",
+  "version": "0.1.0",
+  "description": "OpenCode Zen chat model sub-node: multi-provider LLM gateway as a drop-in model for n8n AI Agents",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && cp -f nodes/LmChatOpenCodeZen/*.svg dist/nodes/LmChatOpenCodeZen/"
+  },
+  "dependencies": {
+    "@langchain/anthropic": "1.3.27",
+    "@langchain/core": "1.2.0",
+    "@langchain/openai": "1.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "n8n-workflow": "1.109.0",
+    "typescript": "^5.7.0"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": ["dist/credentials/OpenCodeZenApi.credentials.js"],
+    "nodes": ["dist/nodes/LmChatOpenCodeZen/LmChatOpenCodeZen.node.js"]
+  }
+}
